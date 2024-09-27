@@ -1,0 +1,88 @@
+2022-07-09 12:47:14.484  INFO 6588 --- [restartedMain] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m              [2m (v2.7.0)[0;39m
+
+
+2022-07-09 12:47:14.609  INFO 6588 --- [restartedMain] c.c.ContactStorageApplication            : Starting ContactStorageApplication using Java 17.0.1 on DESKTOP-4S54IUA with PID 6588 (C:\Users\HP\Documents\ContactStorage\target\classes started by HP in C:\Users\HP\Documents\ContactStorage)
+2022-07-09 12:47:14.610  INFO 6588 --- [restartedMain] c.c.ContactStorageApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-07-09 12:47:14.709  INFO 6588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-09 12:47:14.709  INFO 6588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-09 12:47:16.346  INFO 6588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-09 12:47:16.532  INFO 6588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 151 ms. Found 1 JPA repository interfaces.
+2022-07-09 12:47:18.545  INFO 6588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8282 (http)
+2022-07-09 12:47:18.567  INFO 6588 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-09 12:47:18.568  INFO 6588 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-09 12:47:18.745  INFO 6588 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-09 12:47:18.746  INFO 6588 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4036 ms
+2022-07-09 12:47:19.914  INFO 6588 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-09 12:47:20.617  INFO 6588 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-09 12:47:22.172  INFO 6588 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-09 12:47:22.277  WARN 6588 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-09 12:47:22.998  INFO 6588 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/resources/**']
+2022-07-09 12:47:22.998  INFO 6588 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/static/**']
+2022-07-09 12:47:22.998  INFO 6588 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/img/**']
+2022-07-09 12:47:22.998  INFO 6588 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/productImages/**']
+2022-07-09 12:47:22.999  INFO 6588 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/css/**']
+2022-07-09 12:47:22.999  INFO 6588 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/js/**']
+2022-07-09 12:47:22.999  INFO 6588 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/templates/**']
+2022-07-09 12:47:23.051  INFO 6588 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a43a109, org.springframework.security.web.context.SecurityContextPersistenceFilter@78e7c9a2, org.springframework.security.web.header.HeaderWriterFilter@7beb77e5, org.springframework.security.web.authentication.logout.LogoutFilter@6b59fa92, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@58d29dd9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2e34874, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@16a572d5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b93f64c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ba1bb95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4549f32b, org.springframework.security.web.session.SessionManagementFilter@ef9e532, org.springframework.security.web.access.ExceptionTranslationFilter@76c9f03d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6085b518]
+2022-07-09 12:47:23.263 DEBUG 6588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-07-09 12:47:23.394 DEBUG 6588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2022-07-09 12:47:23.422 DEBUG 6588 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-07-09 12:47:23.434 DEBUG 6588 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-07-09 12:47:23.644  INFO 6588 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-09 12:47:23.708  INFO 6588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8282 (http) with context path ''
+2022-07-09 12:47:23.721  INFO 6588 --- [restartedMain] c.c.ContactStorageApplication            : Started ContactStorageApplication in 9.829 seconds (JVM running for 11.463)
+2022-07-09 12:47:47.222  INFO 6588 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-07-09 12:47:47.263  INFO 6588 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-09 12:47:47.270  INFO 6588 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-09 12:47:47.292  INFO 6588 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-09 12:47:51.339  INFO 6792 --- [restartedMain] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m              [2m (v2.7.0)[0;39m
+
+
+2022-07-09 12:47:51.466  INFO 6792 --- [restartedMain] c.c.ContactStorageApplication            : Starting ContactStorageApplication using Java 17.0.1 on DESKTOP-4S54IUA with PID 6792 (C:\Users\HP\Documents\ContactStorage\target\classes started by HP in C:\Users\HP\Documents\ContactStorage)
+2022-07-09 12:47:51.467  INFO 6792 --- [restartedMain] c.c.ContactStorageApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-07-09 12:47:51.558  INFO 6792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-09 12:47:51.558  INFO 6792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-09 12:47:52.836  INFO 6792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-09 12:47:52.921  INFO 6792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interfaces.
+2022-07-09 12:47:54.138  INFO 6792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8282 (http)
+2022-07-09 12:47:54.156  INFO 6792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-09 12:47:54.156  INFO 6792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-09 12:47:54.303  INFO 6792 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-09 12:47:54.303  INFO 6792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2744 ms
+2022-07-09 12:47:55.045  INFO 6792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-09 12:47:55.572  INFO 6792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-09 12:47:56.914  INFO 6792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-09 12:47:57.009  WARN 6792 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-09 12:47:57.741  INFO 6792 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/resources/**']
+2022-07-09 12:47:57.742  INFO 6792 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/static/**']
+2022-07-09 12:47:57.742  INFO 6792 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/img/**']
+2022-07-09 12:47:57.742  INFO 6792 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/productImages/**']
+2022-07-09 12:47:57.742  INFO 6792 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/css/**']
+2022-07-09 12:47:57.742  INFO 6792 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/js/**']
+2022-07-09 12:47:57.742  INFO 6792 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/templates/**']
+2022-07-09 12:47:57.790  INFO 6792 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@20bfbf31, org.springframework.security.web.context.SecurityContextPersistenceFilter@611b5ba9, org.springframework.security.web.header.HeaderWriterFilter@7108818a, org.springframework.security.web.authentication.logout.LogoutFilter@1eb90a4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5a5fbd74, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2ca3185, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@736095b5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b079422, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7df3c811, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1418877f, org.springframework.security.web.session.SessionManagementFilter@6053c6d7, org.springframework.security.web.access.ExceptionTranslationFilter@7eb13df8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34ff158a]
+2022-07-09 12:47:58.007 DEBUG 6792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-07-09 12:47:58.134 DEBUG 6792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2022-07-09 12:47:58.165 DEBUG 6792 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-07-09 12:47:58.193 DEBUG 6792 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-07-09 12:47:58.399  INFO 6792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-09 12:47:58.470  INFO 6792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8282 (http) with context path ''
+2022-07-09 12:47:58.490  INFO 6792 --- [restartedMain] c.c.ContactStorageApplication            : Started ContactStorageApplication in 7.83 seconds (JVM running for 9.241)
+2022-07-09 12:49:29.358  INFO 6792 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-07-09 12:49:29.390  INFO 6792 --- [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-09 12:49:29.394  INFO 6792 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-09 12:49:29.403  INFO 6792 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

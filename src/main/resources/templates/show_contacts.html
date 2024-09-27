@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang = "en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::Layout(~{::section})">
+<head>
+<meta charset ="UTF-8"/>
+<title> HOME PAGE</title>
+</head>
+<body>
+<section>
+  <div class="card mr-3 mL-3 mt-3">
+  
+  <div class="card-body">
+  
+  <!-- if message is there than only below block will execute -->
+<div  th:if="${session.message}" class="container mt-4">
+
+<!-- type of message will be alert -->
+<div th:classappend="${session.message.type}" class="alert text-center" role="alert">
+
+<!-- content of message
+ -->
+<span th:text="${session.message.content}"></span>
+
+<!-- if we want to remove the message after displaying it once -->
+<th:block th:text="${#session.removeAttribute('message')}"></th:block>
+
+
+</div>
+</div> 
+  
+  <h1 class="text-center">Your Contacts</h1>
+  
+  <div class="search-container my-3">
+  
+  <input onkeyup="search()" id="search-input" type="text" class="form-control" placeholder="search your contacts" />
+  
+  <div class="search-result">
+  
+  <!-- result goes here -->
+  
+  
+  </div>
+  
+  </div>
+  
+  <div class="table-responsive">
+  <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="c : ${contact}">
+      <th scope="row" th:text="${'SCMUSER'+c.cid}">1</th>
+      <td >
+      <img src="" class="my_profile_picture" th:src="@{'/img/' + ${c.image}}" alt="profile photo" />
+      
+      <span th:text="${c.name}"></span></td>
+      
+      <td >
+      <a href="" th:href="@{'/user/' +${c.cid}+'/contact/'}">
+      
+      <span th:text="${c.email}"></span>
+      
+      </a>
+      </td>
+      
+      <td th:text="${c.phone}"></td>
+      
+      <td>
+      
+        <a href="#" th:onclick="|deleteContact(${c.cid})|" class="btn btn-danger btn-sm">Delete</a>   
+      
+      <form method="post" th:action="@{'/user/update-contact/'+${c.cid}}" class="mt-2">
+      
+       <button type="submit" class=" btn btn-primary btn-sm">Update</button>
+       
+       </form>
+       </td>
+       
+    </tr>
+    
+  </tbody>
+</table>
+  
+  </div> 
+   
+  </div>
+  
+  </div>
+
+  <script>
+  
+  $(document).ready(()=>{
+   $(".item").removeClass("active")
+   $("#viewcontacts-link").addClass("active")
+
+  });
+
+  </script>
+</section>
+
+</body>
+</html>
